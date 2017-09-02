@@ -1,0 +1,31 @@
+def separate_train_test_data(file1,file2,data_root):
+    f=open(file1,'r')
+    f2=open(file2,'r')
+    lables1=[]
+    lables2=[]
+
+    for l in f.readlines():
+        lables1.append(l)
+    random.shuffle(lables1)
+    for l in f2.readlines():
+         lables2.append(l)
+    random.shuffle(lables2)
+
+    flag=int(len(lables1)*0.8)
+    flag2=int(len(lables2)*0.8)
+
+    train=lables1+lables2
+    #testdata=lables1[flag+1:]+lables2[flag2+1:]
+
+    random.shuffle(train)
+    #random.shuffle(testdata)
+    image_encode_to_tfrecords(train,data_root,new_name="test.tfrecords",resize=(128,128))
+
+    #image_encode_to_tfrecords(testdata,data_root,new_name="test.tfecords",resize=(128,128))
+
+    f.close()
+
+def generateTraindataORTestData():
+    separate_train_test_data("/home/zhanghao/PycharmProjects/CNN-fish-classfication/data/datapath/Testimg_3N.txt",
+                             "/home/zhanghao/PycharmProjects/CNN-fish-classfication/data/datapath/Testimg_2N.txt",
+                             "/home/zhanghao/PycharmProjects/CNN-fish-classfication/data/traintestdata")
