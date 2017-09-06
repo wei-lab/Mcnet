@@ -11,12 +11,10 @@ TensorFlow needs to be installed before running the scripts. TensorFlow v1.1.0 i
 
 Mcnet requires:
 
- - Python (tested 3.5.1)
- - scikit-learn (tested 0.17)
- - pandas (tested 0.17.1)
- - numexpr (tested 2.4.6)
- - pytables (tested 3.2.2)
- - bedtools (tested 2.25.0)
+ - python>=2.7.3
+ - numpy>=1.7.1
+ - matplotlib>=1.3.1
+ - opencv>=2.4.8
 
 To install the required python packages (except TensorFlow), run
 
