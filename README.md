@@ -9,6 +9,15 @@ Mcnet is developsed a discriminative framework to classify 2N and 3N in the gold
 ### Requirements
 TensorFlow needs to be installed before running the scripts. TensorFlow v1.1.0 is supported; for TensorFlow v0.12 please refer to this branch; for TensorFlow v0.11 please refer to this branch. Note that those branches may not have the same functional as the current master.
 
+Mcnet requires:
+
+ - Python (tested 3.5.1)
+ - scikit-learn (tested 0.17)
+ - pandas (tested 0.17.1)
+ - numexpr (tested 2.4.6)
+ - pytables (tested 3.2.2)
+ - bedtools (tested 2.25.0)
+
 To install the required python packages (except TensorFlow), run
 
 ```
