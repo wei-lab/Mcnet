@@ -7,7 +7,7 @@ This is an implementation of Mcnet in TensorFlow for Classification Carassius au
 Mcnet is developed with a discriminative framework to classify 2N and 3N in the goldfish (C. auratus complex)C. auratusC. auratus. Our system, call Mcnet, provides a novel three pathways (i.e. two HSV channels and one RGB channel) based convolutional neural network, which enable it to combine the advantages of HSV and RGB, and fuse them together to enhance the final feature representation.   Through carefully design in terms of specific turning the channels and convolu-tional  levels,  configuration of different convolution kernel size, GPU based approach to reduce the training time with millions of parameters, we optimize both the structure and performance of  Mcnet.
 
 ### Requirements
- **这个地方最好先写需要那些包，还有python的版本，这样不容易产生误会**
+ **这个地方最好先写需要那些包，还有python的版本，这样不容易产生误会**  
 Mcnet requires:
 
  - TensorFlow>=1.1.0 ???
